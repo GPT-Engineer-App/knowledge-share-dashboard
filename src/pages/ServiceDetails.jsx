@@ -43,26 +43,26 @@ const ServiceDetails = () => {
   }
 
   return (
-    <div className="p-6">
-      <h1 className="mb-4 text-3xl font-bold">{service.title}</h1>
-      <p className="mb-4">{service.description}</p>
-      <h2 className="mb-2 text-2xl font-bold">Priser</h2>
-      <p className="mb-4">{service.pricing}</p>
-      <h2 className="mb-2 text-2xl font-bold">Brugeranmeldelser</h2>
-      <ul className="mb-4 list-disc list-inside">
+    <div className="p-6 bg-white">
+      <h1 className="mb-4 text-3xl font-bold text-eco-green">{service.title}</h1>
+      <p className="mb-4 text-turquoise">{service.description}</p>
+      <h2 className="mb-2 text-2xl font-bold text-eco-green">Priser</h2>
+      <p className="mb-4 text-turquoise">{service.pricing}</p>
+      <h2 className="mb-2 text-2xl font-bold text-eco-green">Brugeranmeldelser</h2>
+      <ul className="mb-4 list-disc list-inside text-turquoise">
         {service.reviews.map((review, index) => (
           <li key={index}>
             <strong>{review.user}:</strong> {review.comment}
           </li>
         ))}
       </ul>
-      <h2 className="mb-2 text-2xl font-bold">Tilgængelige Tjenester</h2>
-      <ul className="list-disc list-inside">
+      <h2 className="mb-2 text-2xl font-bold text-eco-green">Tilgængelige Tjenester</h2>
+      <ul className="list-disc list-inside text-turquoise">
         {service.services.map((service, index) => (
           <li key={index}>{service}</li>
         ))}
       </ul>
-      <Link to="/request-quote" className="px-6 py-3 mt-4 text-lg font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
+      <Link to="/request-quote" className="px-6 py-3 mt-4 text-lg font-bold text-white bg-eco-green rounded hover:bg-turquoise">
         Indhent tilbud
       </Link>
     </div>

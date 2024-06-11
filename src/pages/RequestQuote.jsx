@@ -22,12 +22,12 @@ const RequestQuote = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-white">
       <div className="p-6 bg-white rounded shadow-md">
-        <h2 className="mb-4 text-2xl font-bold">Indhent tilbud</h2>
+        <h2 className="mb-4 text-2xl font-bold text-eco-green">Indhent tilbud</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="name">
+            <label className="block mb-2 text-sm font-bold text-turquoise" htmlFor="name">
               Navn
             </label>
             <input
@@ -42,7 +42,7 @@ const RequestQuote = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="email">
+            <label className="block mb-2 text-sm font-bold text-turquoise" htmlFor="email">
               Email
             </label>
             <input
@@ -57,7 +57,7 @@ const RequestQuote = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="service">
+            <label className="block mb-2 text-sm font-bold text-turquoise" htmlFor="service">
               Service
             </label>
             <input
@@ -72,7 +72,7 @@ const RequestQuote = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="comments">
+            <label className="block mb-2 text-sm font-bold text-turquoise" htmlFor="comments">
               Yderligere kommentarer
             </label>
             <textarea
@@ -86,7 +86,7 @@ const RequestQuote = () => {
           </div>
           <div className="flex items-center justify-between">
             <button
-              className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+              className="px-4 py-2 font-bold text-white bg-eco-green rounded hover:bg-turquoise focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Indsend
