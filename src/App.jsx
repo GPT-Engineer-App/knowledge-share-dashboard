@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import LandingPage from "./pages/LandingPage.jsx";
+import VendorPortal from "./pages/VendorPortal.jsx";
 import Register from "./pages/Register.jsx";
 import WorkplaceDashboard from "./pages/WorkplaceDashboard.jsx";
 import AdminDashboard from "./pages/AdminDashboard.jsx";
@@ -33,6 +34,7 @@ function App() {
         <Route exact path="/request-quote" element={<RequestQuote />} />
         <Route exact path="/support" element={<SupportPage />} />
         <Route exact path="/subsidy-programs" element={<SubsidyPrograms />} />
+        <Route exact path="/vendor-portal" element={<VendorPortal />} />
       </Routes>
     </Router>
   );
