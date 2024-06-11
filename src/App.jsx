@@ -9,6 +9,7 @@ import ServiceDetails from "./pages/ServiceDetails.jsx";
 import RequestQuote from "./pages/RequestQuote.jsx";
 import Navbar from "./components/Navbar.jsx";
 import SupportPage from "./pages/SupportPage.jsx";
+import SubsidyPrograms from "./pages/SubsidyPrograms.jsx";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/services/:category" element={<ServiceDetails />} />
         <Route exact path="/request-quote" element={<RequestQuote />} />
         <Route exact path="/support" element={<SupportPage />} />
+        <Route exact path="/subsidy-programs" element={<SubsidyPrograms />} />
       </Routes>
     </Router>
   );
