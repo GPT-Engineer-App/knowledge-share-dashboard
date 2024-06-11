@@ -8,6 +8,7 @@ import ServiceOverview from "./pages/ServiceOverview.jsx";
 import ServiceDetails from "./pages/ServiceDetails.jsx";
 import RequestQuote from "./pages/RequestQuote.jsx";
 import Navbar from "./components/Navbar.jsx";
+import SupportPage from "./pages/SupportPage.jsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/services" element={<ServiceOverview />} />
         <Route exact path="/services/:category" element={<ServiceDetails />} />
         <Route exact path="/request-quote" element={<RequestQuote />} />
+        <Route exact path="/support" element={<SupportPage />} />
       </Routes>
     </Router>
   );
