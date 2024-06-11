@@ -4,6 +4,8 @@ import Register from "./pages/Register.jsx";
 import WorkplaceDashboard from "./pages/WorkplaceDashboard.jsx";
 import AdminDashboard from "./pages/AdminDashboard.jsx";
 import Login from "./pages/Login.jsx";
+import ServiceOverview from "./pages/ServiceOverview.jsx";
+import ServiceDetails from "./pages/ServiceDetails.jsx";
 import Navbar from "./components/Navbar.jsx";
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
         <Route exact path="/arbejdsplads" element={<WorkplaceDashboard />} />
         <Route exact path="/admin" element={<AdminDashboard />} />
         <Route exact path="/login" element={<Login />} />
+        <Route exact path="/services" element={<ServiceOverview />} />
+        <Route exact path="/services/:category" element={<ServiceDetails />} />
       </Routes>
     </Router>
   );
