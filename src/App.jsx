@@ -6,6 +6,7 @@ import AdminDashboard from "./pages/AdminDashboard.jsx";
 import Login from "./pages/Login.jsx";
 import ServiceOverview from "./pages/ServiceOverview.jsx";
 import ServiceDetails from "./pages/ServiceDetails.jsx";
+import RequestQuote from "./pages/RequestQuote.jsx"; // Import the new component
 import Navbar from "./components/Navbar.jsx";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/services" element={<ServiceOverview />} />
         <Route exact path="/services/:category" element={<ServiceDetails />} />
+        <Route exact path="/request-quote" element={<RequestQuote />} /> {/* Add the new route */}
       </Routes>
     </Router>
   );
