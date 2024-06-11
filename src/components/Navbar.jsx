@@ -12,6 +12,7 @@ const Navbar = () => {
           <Link to="/about" className="text-white">Om os</Link>
           <Link to="/contact" className="text-white">Kontakt</Link>
           <Link to="/subsidy-programs" className="text-white">Tilskudsprogrammer</Link>
+          <Link to="/benchmarking-tools" className="text-white">Benchmarking Tools</Link>
         </div>
       </div>
     </nav>
