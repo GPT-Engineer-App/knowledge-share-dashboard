@@ -1,5 +1,5 @@
-import React from 'react';
 import BenchmarkingForm from '../components/BenchmarkingForm';
+import React from 'react';
 
 const WorkplaceDashboard = () => {
   return (
