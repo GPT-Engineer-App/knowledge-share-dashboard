@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Index from "./pages/Index.jsx";
+import LandingPage from "./pages/LandingPage.jsx";
+import Register from "./pages/Register.jsx";
 import WorkplaceDashboard from "./pages/WorkplaceDashboard.jsx";
 import AdminDashboard from "./pages/AdminDashboard.jsx";
 import Login from "./pages/Login.jsx";
@@ -10,7 +11,8 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Index />} />
+        <Route exact path="/" element={<LandingPage />} />
+        <Route exact path="/register" element={<Register />} />
         <Route exact path="/arbejdsplads" element={<WorkplaceDashboard />} />
         <Route exact path="/admin" element={<AdminDashboard />} />
         <Route exact path="/login" element={<Login />} />

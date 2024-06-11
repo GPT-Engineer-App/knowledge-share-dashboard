@@ -11,6 +11,7 @@ const Navbar = () => {
           <Link to="/arbejdsplads" className="text-white">Arbejdsplads</Link>
           <Link to="/admin" className="text-white">Admin</Link>
           <Link to="/login" className="text-white">Login</Link>
+          <Link to="/register" className="text-white">Register</Link>
         </div>
       </div>
     </nav>
