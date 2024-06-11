@@ -20,11 +20,11 @@ const SupportPage = () => {
   };
 
   return (
-    <div className="p-6">
-      <h1 className="mb-4 text-3xl font-bold">Support</h1>
+    <div className="p-6 bg-white">
+      <h1 className="mb-4 text-3xl font-bold text-eco-green">Support</h1>
       
       <section className="mb-8">
-        <h2 className="mb-4 text-2xl font-bold">FAQ</h2>
+        <h2 className="mb-4 text-2xl font-bold text-turquoise">FAQ</h2>
         <div className="mb-4">
           <h3 className="font-semibold">Hvordan opretter jeg en konto?</h3>
           <p>Du kan oprette en konto ved at klikke på "Register" knappen på forsiden og følge instruktionerne.</p>
@@ -40,7 +40,7 @@ const SupportPage = () => {
       </section>
 
       <section className="mb-8">
-        <h2 className="mb-4 text-2xl font-bold">Kontakt os</h2>
+        <h2 className="mb-4 text-2xl font-bold text-turquoise">Kontakt os</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="name">
@@ -88,7 +88,7 @@ const SupportPage = () => {
           </div>
           <div className="flex items-center justify-between">
             <button
-              className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+              className="px-4 py-2 font-bold text-white bg-eco-green rounded hover:bg-turquoise focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Indsend
@@ -98,7 +98,7 @@ const SupportPage = () => {
       </section>
 
       <section>
-        <h2 className="mb-4 text-2xl font-bold">Live Chat</h2>
+        <h2 className="mb-4 text-2xl font-bold text-turquoise">Live Chat</h2>
         <p>Brug vores live chat service for at få øjeblikkelig hjælp.</p>
         {/* Live chat widget integration */}
         <div id="live-chat-widget">

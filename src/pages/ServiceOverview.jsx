@@ -10,15 +10,15 @@ const services = [
 
 const ServiceOverview = () => {
   return (
-    <div className="p-6">
-      <h1 className="mb-4 text-3xl font-bold">Serviceoversigt</h1>
+    <div className="p-6 bg-white">
+      <h1 className="mb-4 text-3xl font-bold text-eco-green">Serviceoversigt</h1>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {services.map((service, index) => (
           <div className="p-4 bg-white rounded shadow hover:bg-gray-100">
             <img src={service.image} alt={service.name} className="mb-2 rounded" />
-            <h2 className="mb-2 text-xl font-bold">{service.name}</h2>
+            <h2 className="mb-2 text-xl font-bold text-turquoise">{service.name}</h2>
             <p className="mb-2">{service.description}</p>
-            <Link to={service.link} className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">Læs mere</Link>
+            <Link to={service.link} className="px-4 py-2 font-bold text-white bg-eco-green rounded hover:bg-turquoise">Læs mere</Link>
           </div>
         ))}
       </div>

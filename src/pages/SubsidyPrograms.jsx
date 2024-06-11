@@ -38,18 +38,18 @@ const SubsidyPrograms = () => {
 
   return (
     <div className="p-6">
-      <h1 className="mb-4 text-3xl font-bold">Tilskudsprogrammer</h1>
+      <h1 className="mb-4 text-3xl font-bold text-eco-green">Tilskudsprogrammer</h1>
       <div className="mb-8">
         {subsidyPrograms.map((program) => (
           <div key={program.id} className="mb-6">
-            <h2 className="mb-2 text-2xl font-bold">{program.title}</h2>
+            <h2 className="mb-2 text-2xl font-bold text-turquoise">{program.title}</h2>
             <p>{program.description}</p>
             <p className="italic">{program.eligibility}</p>
           </div>
         ))}
       </div>
       <div className="p-6 bg-white rounded shadow-md">
-        <h2 className="mb-4 text-2xl font-bold">Ansøg om tilskud</h2>
+        <h2 className="mb-4 text-2xl font-bold text-eco-green">Ansøg om tilskud</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="name">
@@ -116,7 +116,7 @@ const SubsidyPrograms = () => {
           </div>
           <div className="flex items-center justify-between">
             <button
-              className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+              className="px-4 py-2 font-bold text-white bg-eco-green rounded hover:bg-turquoise focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Indsend ansøgning
