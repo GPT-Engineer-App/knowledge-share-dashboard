@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import ComparisonChart from '../components/ComparisonChart';
 
 const serviceDetails = {
   'tekniske-tjenester': {
@@ -11,6 +12,15 @@ const serviceDetails = {
       { user: 'Jane Smith', comment: 'Meget professionel.' },
     ],
     services: ['Service 1', 'Service 2', 'Service 3'],
+    chartData: {
+      categories: ['Service 1', 'Service 2', 'Service 3'],
+      series: [
+        {
+          name: 'Tekniske Tjenester',
+          data: [1, 2, 3]
+        }
+      ]
+    }
   },
   'konsulenttjenester': {
     title: 'Konsulenttjenester',
@@ -21,6 +31,15 @@ const serviceDetails = {
       { user: 'Bob Brown', comment: 'Ekspertrådgivning.' },
     ],
     services: ['Service A', 'Service B', 'Service C'],
+    chartData: {
+      categories: ['Service A', 'Service B', 'Service C'],
+      series: [
+        {
+          name: 'Konsulenttjenester',
+          data: [4, 5, 6]
+        }
+      ]
+    }
   },
   'finansielle-tjenester': {
     title: 'Finansielle Tjenester',
@@ -31,6 +50,15 @@ const serviceDetails = {
       { user: 'Dana Lee', comment: 'Meget tilfreds.' },
     ],
     services: ['Service X', 'Service Y', 'Service Z'],
+    chartData: {
+      categories: ['Service X', 'Service Y', 'Service Z'],
+      series: [
+        {
+          name: 'Finansielle Tjenester',
+          data: [7, 8, 9]
+        }
+      ]
+    }
   },
 };
 
@@ -62,6 +90,7 @@ const ServiceDetails = () => {
           <li key={index}>{service}</li>
         ))}
       </ul>
+      <ComparisonChart data={service.chartData} />
       <Link to="/request-quote" className="px-6 py-3 mt-4 text-lg font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
         Indhent tilbud
       </Link>
