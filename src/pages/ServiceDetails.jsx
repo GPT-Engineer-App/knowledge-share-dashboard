@@ -44,7 +44,10 @@ const ServiceDetails = () => {
 
   return (
     <div className="p-6">
-      <h1 className="mb-4 text-3xl font-bold text-eco-green">{service.title}</h1>
+      <div className="p-6 bg-white">
+        <h1 className="mb-4 text-3xl font-bold">{service.title}</h1>
+        <h1 className="mb-4 text-3xl font-bold text-eco-green">{service.title}</h1>
+      </div>
       <p className="mb-4">{service.description}</p>
       <h2 className="mb-2 text-2xl font-bold">Priser</h2>
       <p className="mb-4">{service.pricing}</p>

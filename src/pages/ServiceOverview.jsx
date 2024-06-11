@@ -10,8 +10,8 @@ const services = [
 
 const ServiceOverview = () => {
   return (
-    <div className="p-6 bg-white">
-      <h1 className="mb-4 text-3xl font-bold text-eco-green">Serviceoversigt</h1>
+    <div className="p-6">
+      <h1 className="mb-4 text-3xl font-bold">Serviceoversigt</h1>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {services.map((service, index) => (
           <div className="p-4 bg-white rounded shadow hover:bg-gray-100">
