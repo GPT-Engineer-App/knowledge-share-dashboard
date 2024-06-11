@@ -17,6 +17,7 @@ import Notifications from "./pages/Notifications.jsx";
 import CentralizedWorkspace from "./pages/CentralizedWorkspace.jsx";
 import ResidentRequests from "./pages/ResidentRequests.jsx";
 import PredefinedWorkflows from "./pages/PredefinedWorkflows.jsx";
+import BenchmarkingTools from "./components/BenchmarkingTools.jsx";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route exact path="/request-quote" element={<RequestQuote />} />
         <Route exact path="/support" element={<SupportPage />} />
         <Route exact path="/subsidy-programs" element={<SubsidyPrograms />} />
+        <Route exact path="/benchmarking-tools" element={<BenchmarkingTools />} />
       </Routes>
     </Router>
   );
