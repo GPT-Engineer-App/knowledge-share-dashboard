@@ -7,11 +7,10 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-lg font-bold">Foreningstorvet Dashboard</div>
         <div className="flex space-x-4">
-          <Link to="/" className="text-white">Hjem</Link>
-          <Link to="/arbejdsplads" className="text-white">Arbejdsplads</Link>
-          <Link to="/admin" className="text-white">Admin</Link>
-          <Link to="/dashboard" className="text-white">Oversigt</Link>
-          <Link to="/register" className="text-white">Register</Link>
+          <Link to="/" className="text-white">Forside</Link>
+          <Link to="/services" className="text-white">Services</Link>
+          <Link to="/about" className="text-white">Om os</Link>
+          <Link to="/contact" className="text-white">Kontakt</Link>
           <Link to="/services" className="text-white">Services</Link>
         </div>
       </div>
