@@ -10,6 +10,13 @@ import RequestQuote from "./pages/RequestQuote.jsx";
 import Navbar from "./components/Navbar.jsx";
 import SupportPage from "./pages/SupportPage.jsx";
 import SubsidyPrograms from "./pages/SubsidyPrograms.jsx";
+import MaintenancePlans from "./pages/MaintenancePlans.jsx";
+import WorkflowAutomation from "./pages/WorkflowAutomation.jsx";
+import AIAnalysis from "./pages/AIAnalysis.jsx";
+import Notifications from "./pages/Notifications.jsx";
+import CentralizedWorkspace from "./pages/CentralizedWorkspace.jsx";
+import ResidentRequests from "./pages/ResidentRequests.jsx";
+import PredefinedWorkflows from "./pages/PredefinedWorkflows.jsx";
 
 function App() {
   return (
