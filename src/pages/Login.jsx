@@ -2,9 +2,9 @@ import React from 'react';
 
 const Login = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-white">
       <div className="p-6 bg-white rounded shadow-md">
-        <h2 className="mb-4 text-2xl font-bold">Log ind</h2>
+        <h2 className="mb-4 text-2xl font-bold text-eco-green">Log ind</h2>
         <form>
           <div className="mb-4">
             <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="email">
