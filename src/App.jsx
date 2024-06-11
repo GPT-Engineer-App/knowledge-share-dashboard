@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Index />} />
-        <Route exact path="/workplace" element={<WorkplaceDashboard />} />
+        <Route exact path="/arbejdsplads" element={<WorkplaceDashboard />} />
         <Route exact path="/admin" element={<AdminDashboard />} />
         <Route exact path="/login" element={<Login />} />
       </Routes>
