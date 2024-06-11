@@ -2,6 +2,7 @@ import React from 'react';
 import TaskList from '../components/TaskList';
 import FinancialSummary from '../components/FinancialSummary';
 import Meetings from '../components/Meetings';
+import ComparisonCharts from '../components/ComparisonCharts';
 
 const Dashboard = () => {
   return (
@@ -15,6 +16,9 @@ const Dashboard = () => {
           <FinancialSummary />
           <Meetings />
         </div>
+      </div>
+      <div className="mt-6">
+        <ComparisonCharts />
       </div>
     </div>
   );
